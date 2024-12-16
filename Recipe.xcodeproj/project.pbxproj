@@ -11,6 +11,13 @@
 		38C41C292D108DA600335BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C282D108DA600335BBF /* ContentView.swift */; };
 		38C41C2B2D108DA800335BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C41C2A2D108DA800335BBF /* Assets.xcassets */; };
 		38C41C2E2D108DA800335BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38C41C2D2D108DA800335BBF /* Preview Assets.xcassets */; };
+		38C41C392D108DF900335BBF /* RecipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C382D108DF900335BBF /* RecipeCellView.swift */; };
+		38C41C3B2D108F4000335BBF /* RecipeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C3A2D108F4000335BBF /* RecipeScrollView.swift */; };
+		38C41C3E2D10947D00335BBF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C3D2D10947D00335BBF /* Recipe.swift */; };
+		38C41C402D10955800335BBF /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C3F2D10955800335BBF /* RecipeService.swift */; };
+		38C41C422D10959000335BBF /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C412D10959000335BBF /* RecipeViewModel.swift */; };
+		38C41C442D1097FA00335BBF /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C41C432D1097FA00335BBF /* RecipeDetailView.swift */; };
+		38C41C462D10AEED00335BBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 38C41C452D10AEED00335BBF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		38C41C282D108DA600335BBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38C41C2A2D108DA800335BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38C41C2D2D108DA800335BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38C41C382D108DF900335BBF /* RecipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellView.swift; sourceTree = "<group>"; };
+		38C41C3A2D108F4000335BBF /* RecipeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeScrollView.swift; sourceTree = "<group>"; };
+		38C41C3D2D10947D00335BBF /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		38C41C3F2D10955800335BBF /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
+		38C41C412D10959000335BBF /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		38C41C432D1097FA00335BBF /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		38C41C452D10AEED00335BBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		38C41C252D108DA600335BBF /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				38C41C3C2D10947500335BBF /* Model */,
+				38C41C362D108DDE00335BBF /* ViewModels */,
+				38C41C342D108DB500335BBF /* Views */,
 				38C41C262D108DA600335BBF /* RecipeApp.swift */,
-				38C41C282D108DA600335BBF /* ContentView.swift */,
+				38C41C452D10AEED00335BBF /* README.md */,
 				38C41C2A2D108DA800335BBF /* Assets.xcassets */,
 				38C41C2C2D108DA800335BBF /* Preview Content */,
 			);
@@ -65,6 +82,50 @@
 				38C41C2D2D108DA800335BBF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38C41C342D108DB500335BBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38C41C372D108DEA00335BBF /* RecipeViews */,
+				38C41C352D108DBD00335BBF /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		38C41C352D108DBD00335BBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				38C41C282D108DA600335BBF /* ContentView.swift */,
+				38C41C3A2D108F4000335BBF /* RecipeScrollView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		38C41C362D108DDE00335BBF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				38C41C3F2D10955800335BBF /* RecipeService.swift */,
+				38C41C412D10959000335BBF /* RecipeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		38C41C372D108DEA00335BBF /* RecipeViews */ = {
+			isa = PBXGroup;
+			children = (
+				38C41C382D108DF900335BBF /* RecipeCellView.swift */,
+				38C41C432D1097FA00335BBF /* RecipeDetailView.swift */,
+			);
+			path = RecipeViews;
+			sourceTree = "<group>";
+		};
+		38C41C3C2D10947500335BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38C41C3D2D10947D00335BBF /* Recipe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C41C462D10AEED00335BBF /* README.md in Resources */,
 				38C41C2E2D108DA800335BBF /* Preview Assets.xcassets in Resources */,
 				38C41C2B2D108DA800335BBF /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C41C392D108DF900335BBF /* RecipeCellView.swift in Sources */,
 				38C41C292D108DA600335BBF /* ContentView.swift in Sources */,
 				38C41C272D108DA600335BBF /* RecipeApp.swift in Sources */,
+				38C41C422D10959000335BBF /* RecipeViewModel.swift in Sources */,
+				38C41C3B2D108F4000335BBF /* RecipeScrollView.swift in Sources */,
+				38C41C402D10955800335BBF /* RecipeService.swift in Sources */,
+				38C41C3E2D10947D00335BBF /* Recipe.swift in Sources */,
+				38C41C442D1097FA00335BBF /* RecipeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +343,12 @@
 				DEVELOPMENT_TEAM = LZ2WC49YU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Finder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +373,12 @@
 				DEVELOPMENT_TEAM = LZ2WC49YU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Recipe Finder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
